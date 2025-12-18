@@ -1,0 +1,166 @@
+:root{
+  --blue:#2563eb;
+  --blue-soft:#e8f0ff;
+  --cyan:#38bdf8;
+  --green:#16a34a;
+  --red:#dc2626;
+  --gray:#64748b;
+  --bg:#f5f9ff;
+}
+
+/* ---------- BASE ---------- */
+body{
+  margin:0;
+  font-family:system-ui,Arial,sans-serif;
+  background:var(--bg);
+  font-size:14px;
+}
+
+.container{
+  max-width:900px;
+  margin:24px auto;
+  padding:16px;
+}
+
+.top-actions{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:14px;
+}
+
+/* ---------- CARDS ---------- */
+.card{
+  background:#fff;
+  border-radius:10px;
+  padding:14px;
+  box-shadow:0 6px 18px rgba(0,0,0,.06);
+  margin-bottom:14px;
+}
+
+/* ---------- NAV ---------- */
+.nav{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,36px);
+  gap:6px;
+  margin-bottom:12px;
+}
+
+.nav button{
+  width:36px;
+  height:36px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid #94a3b8;
+  border-radius:8px;
+  background:#dde6f5;
+  font-size:13px;
+  color:#1e293b;
+}
+
+
+/* states */
+.nav button.nav-active{
+  background:var(--blue);
+  color:#fff;
+  outline:2px solid var(--cyan);
+}
+
+.nav button.nav-selected{
+  background:#93c5fd;
+  color:#1e3a8a;
+}
+
+.nav button.nav-good{
+  background:var(--green);
+  color:#fff;
+}
+
+.nav button.nav-bad{
+  background:var(--red);
+  color:#fff;
+}
+
+.nav button.nav-empty{
+  background:#94a3b8;
+  color:#fff;
+}
+
+/* ---------- QUESTION ---------- */
+.question{
+  font-weight:700;
+  margin-bottom:10px;
+}
+
+/* ---------- OPTIONS ---------- */
+.options{
+  display:grid;
+  gap:8px;
+}
+
+.option{
+  padding:10px 12px;
+  border-radius:8px;
+  background:#f1f5ff;
+  cursor:pointer;
+  font-weight:700;
+}
+
+.option.selected{
+  outline:2px solid var(--blue);
+  background:var(--blue-soft);
+}
+
+.option.correct{
+  background:#dcfce7;
+}
+
+.option.wrong{
+  background:#fee2e2;
+}
+
+.option.locked{
+  cursor:default;
+}
+
+/* ---------- EXPLANATION ---------- */
+.explanation{
+  margin-top:10px;
+  padding:10px;
+  background:#f0f9ff;
+  border-left:4px solid var(--cyan);
+  font-size:13px;
+}
+
+/* ---------- ACTIONS ---------- */
+.bottom-actions{
+  display:flex;
+  justify-content:space-between;
+  margin-top:12px;
+}
+
+button{
+  padding:8px 14px;
+  border-radius:8px;
+  border:none;
+  background:var(--blue);
+  color:#fff;
+  font-size:13px;
+  cursor:pointer;
+}
+
+button.secondary{
+  background:var(--gray);
+}
+
+button.danger{
+  background:var(--red);
+}
+
+.question {
+  white-space: pre-wrap;
+  font-family: Consolas, Monaco, monospace;
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 8px;
+}
