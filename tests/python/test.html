@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Тест</title>
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<div class="container">
+<div class="top-actions">
+  <button class="secondary" onclick="exitMenu()">В меню</button>
+  <button class="danger" onclick="finish()">Завершить тест</button>
+</div>
+<div id="nav" class="nav"></div>
+<div id="content"></div>
+<div class="bottom-actions">
+  <button onclick="prev()">Назад</button>
+  <button onclick="check()">Проверить</button>
+  <button onclick="next()">Далее</button>
+</div>
+</div>
+<script src="../../js/storage.js"></script>
+<script src="questions.js"></script>
+<script src="test.js"></script>
+</body>
+</html>
